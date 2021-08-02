@@ -1,0 +1,158 @@
+.showcase {
+    overflow-x: hidden;
+    margin-bottom: 8rem;
+
+    .container-grid {
+        max-width: 500px;
+        min-width: 380px;
+        margin: 0 auto;
+
+        position: relative;
+
+        @include lg {
+            max-width: 800px;
+        }
+
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(12, 50px);
+        gap: 10px;
+        grid-template-areas: ". . . a a a a a a a . ."
+        "b b b a a a a a a a c c"
+        "b b b a a a a a a a c c"
+        "b b b a a a a a a a c c"
+        "b b b g g g g g d d d d"
+        "b b b g g g g g d d d d"
+        "b b b g g g g g d d d d"
+        "h h h g g g g g d d d d"
+        "h h h f f f f f e e e e"
+        "h h h f f f f f e e e e"
+        ". . . f f f f f e e e e"
+        ". . . f f f f f . . . .";
+
+        @include lg {
+            grid-template-columns: repeat(16, 1fr);
+            grid-template-rows: repeat(10, 50px);
+            grid-template-areas:
+                ". . . a a a a a a a . . . . . ."
+                "b b b a a a a a a a . . . . . ."
+                "b b b a a a a a a a c c . . . ."
+                "b b b a a a a a a a c c z z z z"
+                "b b b a a a a a a a c c z z z z"
+                "b b b g g g g g d d d d z z z z"
+                "b b b g g g g g d d d d z z z z"
+                "b b b g g g g g d d d d x x x x"
+                "h h h g g g g g d d d d x x x x"
+                "h h h f f f f f e e e e x x x x"
+                "h h h f f f f f e e e e x x x x"
+                ". . . f f f f f e e e e . . . ."
+                ". . . f f f f f e e e e . . . .";
+        }
+
+        .box-1 {
+            grid-area: a;
+            background: url(/dist/images/a.svg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: block;
+            border-radius: 15px;
+        }
+
+        .box-2 {
+            grid-area: b;
+            background: url(/dist/images/b.svg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            border-radius: 15px;
+        }
+
+        .box-3 {
+            grid-area: c;
+
+            background: url(/dist/images/c.svg);
+            background-position: top;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            border-radius: 15px;
+        }
+
+        .box-4 {
+            grid-area: d;
+            background: url(/dist/images/d.svg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 15px;
+        }
+
+        .box-5 {
+            grid-area: e;
+            background: url(/dist/images/user.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 15px;
+        }
+
+        .box-6 {
+            grid-area: f;
+            background: url(/dist/images/f.svg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            border-radius: 15px;
+        }
+
+        .box-7 {
+            grid-area: g;
+            background: url(/dist/images/g.svg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 15px;
+        }
+
+        .box-8 {
+            grid-area: h;
+
+            background: url(/dist/images/h.svg);
+            background-position: left;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 15px;
+        }
+
+        .box-9 {
+            grid-area: z;
+            background: url(/dist/images/z.svg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 15px;
+            display: none;
+
+            @include lg {
+                display: block;
+            }
+        }
+
+        .box-10 {
+            grid-area: x;
+            background: url(/dist/images/x.png);
+            background-position: left;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 15px;
+            display: none;
+
+            @include lg {
+                display: block;
+            }
+        }
+    }
+}

@@ -1,0 +1,126 @@
+.features {
+    margin-bottom: 8rem;
+
+    .container {
+        .text {
+            .title {
+                text-align: left;
+                font-size: $Paragraph-1;
+                color: $Black;
+                letter-spacing: 0.25px;
+                font-weight: $font-Bold;
+                line-height: 36px;
+
+                @include lg {
+                    text-align: center;
+                }
+
+                span {
+                    display: block;
+                    color: $Dark-Purple;
+
+                    @include lg {
+                        display: inline-block;
+                    }
+                }
+            }
+
+            .subtitle {
+                color: $Black;
+                font-size: $Paragraph-2;
+                line-height: 32px;
+                text-align: left;
+                margin-bottom: 3rem;
+
+                @include lg {
+                    text-align: center;
+                }
+            }
+        }
+
+        .row {
+            .col-6 {
+
+
+                .card {
+                    margin-bottom: 2rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    padding: 2rem;
+
+
+
+                    .title {
+                        font-weight: $font-Bold;
+                        font-size: $Paragraph-2;
+                        letter-spacing: 0.19px;
+                        line-height: 27px;
+                        text-align: left;
+                    }
+
+
+                    .one {
+                        background-color: $Dark-pink;
+                    }
+
+                    .two {
+                        background-color: $Dark-green;
+                    }
+
+                    .three {
+                        background-color: $Dark-Blue;
+                    }
+
+                    .four {
+                        background-color: $Dark-Purple;
+                    }
+
+                    .image {
+                        position: relative;
+                        border-radius: 20px;
+
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 60px;
+                        height: 60px;
+                        padding: 0.25rem 0.5rem;
+                        margin-bottom: 1rem;
+
+
+
+
+                        img {}
+
+
+
+                    }
+
+
+                    .desc {
+                        font-size: $Subtitle-2;
+                        color: $Dark-Gray;
+                        line-height: 24px;
+                        margin-bottom: 1rem;
+
+                        @include lg {
+                            padding-right: 4rem;
+                        }
+                    }
+
+                    .button {
+                        color: $Dark-Purple;
+                        border-radius: 10px;
+                        padding: 0.5rem 1.2rem;
+
+                        @include lg {
+                            max-width: 150px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

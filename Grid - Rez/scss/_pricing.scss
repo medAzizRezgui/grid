@@ -1,0 +1,290 @@
+.pricing {
+    .container {
+        margin-bottom: 8rem;
+
+        .heading {
+            .title {
+                margin: 0 auto;
+                width: 95%;
+                text-align: left;
+                letter-spacing: -0.5px;
+                line-height: 48px;
+                font-size: $Headline-4;
+                font-weight: $font-Bold;
+                color: black;
+                margin-bottom: 0;
+
+                @include lg {
+                    text-align: center;
+                }
+            }
+
+            .plan-select {
+                position: relative;
+                margin: 0 auto;
+                width: 95%;
+
+                @include lg {
+                    text-align: center;
+                }
+
+                i {
+                    color: $Dark-Purple;
+                    margin-left: 1rem;
+                    animation: scaleup 1s ease-in-out infinite;
+
+                    @include xsm {
+                        margin-left: 3rem;
+                    }
+
+                    @include sm {
+                        margin-left: 5rem;
+                    }
+
+                }
+
+                @keyframes scaleup {
+                    0% {
+                        transform: scale(1) translateY(5px);
+                    }
+
+                    50% {
+                        transform: scale(1.2) translateY(5px)
+                    }
+
+                    100% {
+                        transform: scale(1) translateY(5px);
+                    }
+
+                }
+
+                color: $Black;
+                letter-spacing: -0.25px;
+                font-size: $Paragraph-1;
+                margin-bottom: 3rem;
+
+                #month {
+                    cursor: pointer;
+                    color: $Light-Gray;
+                }
+
+                #year {
+                    cursor: pointer;
+                }
+
+                .month {
+                    margin-right: rem;
+                    display: block;
+                    opacity: 0;
+                    width: 95px;
+                    height: 15px;
+                    background-color: $Light-Green;
+                    position: absolute;
+                    border-radius: 30px;
+                    z-index: -1;
+                    left: 7.75rem;
+                    bottom: 0rem;
+                    transition: 0.3s;
+
+                    @include lg {
+                        left: 34.3rem;
+                    }
+
+                    @include xl {
+                        left: 42.8rem;
+                    }
+
+                    @include xxl {
+                        left: 51.3rem;
+                    }
+                }
+
+                .year {
+                    margin-left: 1rem;
+                    display: block;
+                    width: 85px;
+                    height: 15px;
+                    background-color: $Light-Yellow;
+                    position: absolute;
+                    border-radius: 30px;
+                    z-index: -1;
+                    left: 17.6rem;
+                    bottom: 0rem;
+                    transition: 0.3s;
+
+                    @include lg {
+                        left: 44.2rem;
+                    }
+
+                    @include xl {
+                        left: 53rem;
+                    }
+
+                    @include xxl {
+                        left: 61.2rem;
+                    }
+                }
+            }
+        }
+
+        .row {
+            .plan-col {
+                margin-bottom: 3rem;
+
+                .solo-plan {
+                    width: 95%;
+                    margin: 0 auto;
+                    padding: 2rem 2.5rem;
+                    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                    border-radius: 15px;
+
+                    .title {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin-bottom: 1rem;
+
+                        h3 {
+                            color: $Black;
+                            font-size: $Paragraph-2;
+                            font-weight: $font-Bold;
+                            letter-spacing: 0.2px;
+                            margin-bottom: 0;
+                        }
+
+                        .info {
+                            text-transform: uppercase;
+                            font-size: 1.2rem;
+                            letter-spacing: 2.5px;
+                            font-weight: $font-Extra-Bold;
+                            border: 1px solid $Light-Gray;
+                            padding: 0.5rem 2rem;
+                            border-radius: 25px;
+                            text-align: center;
+                        }
+                    }
+
+                    .price {
+                        text-align: left;
+                        font-size: $Paragraph-1;
+                        color: $Dark-Purple;
+                        font-weight: $font-Bold;
+                        margin-bottom: 2rem;
+
+                        span {
+                            letter-spacing: 2.5px;
+                            font-size: 1.2rem;
+                            text-transform: uppercase;
+                        }
+                    }
+
+                    .options {
+                        ul {
+                            margin-bottom: 3rem;
+
+                            .op {
+                                display: none;
+
+                                @include lg {
+                                    display: block;
+                                }
+                            }
+
+                            li {
+                                color: $Black;
+
+                                font-size: $Body;
+                                font-weight: $font-Medium;
+                                letter-spacing: 0.2px;
+                                display: flex;
+                                align-items: center;
+                                margin-bottom: 3rem;
+
+                                i {
+                                    color: $Light-Green;
+                                    font-size: 2rem;
+                                    margin-right: 1rem;
+                                }
+                            }
+                        }
+                    }
+
+                    .button {
+                        width: 100%;
+                        color: white;
+                        border: none;
+                        border-radius: 16px;
+                        background-color: $Dark-Purple;
+                        font-size: $Paragraph-2;
+                        margin-bottom: 0rem;
+                        padding: 0.75rem;
+                    }
+                }
+
+                .entreprise {
+                    background-color: $Dark-Purple;
+
+                    .title {
+
+
+                        h3 {
+                            color: $Light-Green;
+                        }
+
+                        .info {
+                            border: 1px solid $Light-Green;
+                            color: $Light-Green;
+                        }
+                    }
+
+                    .price {
+                        color: white;
+                        text-shadow: 0px 4px 0px $Black;
+
+                        span {}
+                    }
+
+                    .options {
+                        ul {
+
+
+
+                            li {
+                                color: white;
+
+                                i {
+                                    color: $Black;
+                                }
+                            }
+                        }
+                    }
+
+                    .button {
+                        background-color: white;
+                        color: $Black;
+                        box-shadow: 0px 4px 16px 0px #26323814;
+
+                        box-shadow: 0px 4px 6px 0px #26323829;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+.activate-text {
+    color: $Black !important;
+}
+
+.disable-text {
+    color: $Light-Gray;
+}
+
+.show-bar {
+    opacity: 1 !important;
+}
+
+.hide-bar {
+    opacity: 0 !important;
+}
